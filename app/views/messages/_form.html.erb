@@ -6,11 +6,7 @@
   <%= f.input :email, :label => 'E-mail:', input_html: {size: 20}, :class => "text" %>
   <%= f.input :body, :label => 'Ваше Сообщение:', input_html: { :cols => 20, rows: 5}, :class => "text" %>
   <%= f.button :submit %>
-  <a href="javascript:document.forms['feedback'].reset()"><img value="ОЧИСТИТЬ" src="jpg/button_reset.gif" width="80" height="17" border="0"></a>
 <% end %>
 Все поля обязательны для заполнения
-
-<%= button_tag 'Reset', :type => 'reset' %>
-<%= submit_tag("Start Over", { :name => 'reset', :id => 'reset_button', :type => "reset" }) %>
 
 
