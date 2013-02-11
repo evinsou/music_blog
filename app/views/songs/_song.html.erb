@@ -1,0 +1,5 @@
+<%= div_for song do %>
+  <%= link_to song.title, song_path(song) %>
+  <%= song.authors %> |
+  <%= song.record_year %>
+<% end %>

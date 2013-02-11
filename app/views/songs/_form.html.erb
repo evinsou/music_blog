@@ -1,0 +1,10 @@
+<%= simple_form_for @song do |f| %>
+  <%= render "shared/error_messages", :target => @song %>
+  Добавьте новую песню
+  <%= f.input :title, :label => 'Название:', input_html: { :size => '25'}, :class => "text" %>
+  <%= f.input :authors, :label => 'Авторы:', input_html: { :size => '25'}, :class => "text" %>
+  <%= f.input :record_year, :label => 'Год записи:', input_html: { :size => '25'} %>
+  <%= f.input :lyrics, :label => 'Текст песни:', input_html: { :cols => 20, :rows => 5}   %>
+  <%= f.input :music_papers, :label => 'Листы нот:', input_html: { :cols => 20, :rows => 5} %>
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,8 @@
+
+<%= simple_form_for @feedback do |f| %>
+Введите Ваше сообщение
+  <%= f.input :name, input_html: { :size => '25'},  :label => 'Имя:' %>
+  <%= f.input :location, input_html: { :size => '25'}, :label => 'Город, страна:' %>
+  <%= f.input :body, input_html: { :rows => '5', :cols => '35'}, :label => 'Ваше сообщение:' %>
+  <%= f.button :submit %>
+<% end %>
