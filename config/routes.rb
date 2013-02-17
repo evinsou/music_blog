@@ -16,5 +16,7 @@ Romans::Application.routes.draw do
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
 
-  root to: 'high_voltage/pages#show', id: 'main_page'
+  match '/pages/*id' => 'pages#show', as: :page, format: false
+
+  root to: 'pages#show', id: 'main_page'
 end

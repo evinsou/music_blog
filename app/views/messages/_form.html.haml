@@ -1,0 +1,8 @@
+= simple_form_for @message do |f|
+  Вы можете отправить мне сообщение:
+  \#{f.input :name, :label => 'Имя:', input_html: { size: 20}, :class => "text"}
+  \#{f.input :location, :label => 'Город, страна:',input_html: {  size: 20}, :class => "text"}
+  \#{f.input :email, :label => 'E-mail:', input_html: {size: 20}, :class => "text"}
+  \#{f.input :body, :label => 'Ваше Сообщение:', input_html: { :cols => 20, rows: 5}, :class => "text"}
+  \#{f.button :submit}
+Все поля обязательны для заполнения

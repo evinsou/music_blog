@@ -8,20 +8,185 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require reset
  *= require_self
  *= require_tree .
  */
+/*
+for title header h1
+ font-family: "StudioScriptCRegular",sans-serif;
+ for nav menu li a
+ font-family: "LetteraTrentadueRegular",serif;
+ for text p
+ font-family: "Comic Sans MS","Comic Sans",sans-serif;
+ */
+/* general styles */
+body {
+  background-color: #E2CC99;
+  color: #433C2A;
+  margin: 0 auto;
+  font-family: "Comic Sans MS","Comic Sans", sans-serif;
+  width: 1280px;}
 
-body span {
+.fl-lf {
+  float: left;
+  border: red 1px solid;
+}
+.fl-rt {
+  float: right;
+  border: blue 1px solid;
+}
+.clearfix {
+  clear: both;
+  font-size: 0;
+}
+.weaves {
+  font-size: 0;
+  margin: 0 auto;
+}
+.text-to-right {
+  text-align: right;
+}
+.narrow-text {
+  width: 550px;
+}
+.wide-text {
+  width: 980px;
+}
+.anons-width{
+  width: 235px;
+}
+.text-block {
   display: inline-block;
 }
-body span ul {
+
+/* general styles */
+/* layout styles */
+header h1 {
+  font-family: "Comic Sans MS","Comic Sans",sans-serif;
+  font-family: "StudioScriptCRegular",sans-serif;
+  font-size: 29pt;
+  margin-right: 10px;
+  text-align: center;
+}
+header .weaves {
+  width: 1165px;
+}
+#main {
+  width: 1280px;
+}
+#main aside {
   display: inline-block;
+  height: 300px;
+  text-align: right;
+  vertical-align: top;
+  width: 200px;
 }
-body span ul li {
+#main aside nav {
+  padding: 10px;
+  width: 180px;
+}
+#main aside nav a {
+  color: #433C2A;
+  text-decoration: none;
+  display: block;
+  font-family: "LetteraTrentadueRegular",serif;
+  font-size: 14pt;
+}
 
-}
+/* layout */
 
-span {
-  width: 500px;
+#main #content {
+  display: inline-block;
+  width: 980px;
 }
+#main #content h1 {
+  font-size: 2em;
+  margin: 10px 0;
+  text-align: center;
+}
+/* songs */
+#main #content #page-image {
+  display: inline-block;
+  margin: 1px;
+  vertical-align: top;
+  width: 178px;
+}
+#main #content #songs-page-desc {
+  display: inline-block;
+  padding: 5px;
+  width: 700px;
+}
+#main #content #songs-page-desc h1 {
+  font-family: "StudioScriptCRegular",sans-serif;
+  font-size: 18pt;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#main #content #songs-list {
+  width: 980px;
+}
+#main #songs-list .weaves {
+  width: 705px;
+}
+#main #songs-list .song {
+  margin: 5px 0;
+}
+/* songs */
+#main #content .weaves {
+  font-size: 0;
+  margin: 30px auto;
+}
+#main #content .show {
+  width: 235px;
+}
+/* anonsment */
+#main #content #anons-photo {
+  display: inline-block;
+  width: 235px;
+}
+#main #content #sponsor-search {
+  text-align: justify;
+  text-indent: 1.5em;
+  font-size: 11pt;
+  font-style: italic;
+  font-weight: bold;
+}
+#main #content p > a {
+  font-weight: bold;
+}
+#main #content .narrow-anons {
+  width: 725px;
+}
+#main #content ul p {
+  display:inline;
+  margin-left: 10px;
+}
+/* anonsment */
+/* messages */
+/* messages */
+/* reviews */
+#main #content a > img {
+  width: 151px;
+  height: 218px;
+  border:  0;
+}
+/* reviews */
+/* about myself */
+#main #content p {
+  font-size: 11pt;
+  text-align: justify;
+  text-indent: 1.5em;
+  color: #433C2A;
+  font-family: "Comic Sans MS","Comic Sans",sans-serif;
+  margin: 2px;
+  padding: 3px;
+}
+#main #content img.photo {
+  display: inline-block;
+  height: 342px;
+  margin: 45px 0 10px 20px;
+  padding: 4px;
+  width: 385px;
+}
+/* about myself */

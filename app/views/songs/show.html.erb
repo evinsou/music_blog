@@ -1,4 +1,5 @@
 
 
-<%= @song.lyrics %>
-<%= @song.music_papers %>
+<%= simple_format @song.lyrics %>
+<br>
+<%= image_tag @song.music_papers %>

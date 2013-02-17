@@ -1,4 +1,9 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+<h1>Список личных сообщений</h1>
 
-<%= render @messages %>
+<% if @messages.any? %>
+  <%= render @messages %>
+<% else %>
+  <p>Вы еще не получили ни одного сообщения</p>
+<% end %>
+
+

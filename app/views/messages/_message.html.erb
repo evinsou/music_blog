@@ -1,8 +1,13 @@
 <%= div_for message do %>
-  <%= message.name %> <br>
-  <%= message.location %> <br>
-  <%= message.email %> <br>
-  <%= message.body %> <br>
+  <div>
+    Пишет <%= message.name %> из <%= message.location %> <br>
+    ответ можно прислать на ящик с адресом <%= message.email %>
+  </div>
+  <div>
+    <%= message.body %>
+  </div>
 <% end %>
+
+
 
 
