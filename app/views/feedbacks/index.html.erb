@@ -1,6 +1,10 @@
 <h1>Feedbacks#index</h1>
 <p>Find me in app/views/feedbacks/index.html.erb</p>
 
-<%= render @feedbacks %>
+<% if @feedbacks.any? %>
+  <%= render @feedbacks %>
+<% else %>
+  <p>Пока нет ни одного отзывы</p>
+<% end %>
 
 <%= link_to 'Back', root_path %>

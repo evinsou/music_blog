@@ -1,6 +1,10 @@
 <h1>Feedbacks#not_published</h1>
 <p>place where is checking </p>
 
-<%= render @feedbacks %>
+<% if @feedbacks.any? %>
+  <%= render @feedbacks %>
+<% else %>
+  <p>Пока нет ни одного отзывы для проверки</p>
+<% end %>
 
 <%= link_to 'Back', root_path %>
