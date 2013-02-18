@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem "high_voltage"
 gem "haml-rails"
+gem "bcrypt-ruby"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
