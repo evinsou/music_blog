@@ -5,10 +5,6 @@ class FeedbacksController < ApplicationController
     @feedbacks = Feedback.published
     respond_with @feedbacks
   end
-  def new
-    @feedback = Feedback.new
-    respond_with @feedback
-  end
   def create
     @feedback = Feedback.new(params[:feedback])
     if @feedback.save
@@ -33,7 +29,6 @@ class FeedbacksController < ApplicationController
     @feedback = Feedback.find(params[:id])
     redirect_to feedbacks_path, :notice => 'Feedback deleted'
   end
-
   def publish
     @feedback = Feedback.find(params[:id])
     @feedback.update_attributes :is_published => true

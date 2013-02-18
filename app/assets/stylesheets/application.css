@@ -93,9 +93,6 @@ header .weaves {
   font-family: "LetteraTrentadueRegular",serif;
   font-size: 14pt;
 }
-
-/* layout */
-
 #content {
   display: inline-block;
   width: 980px;
@@ -105,8 +102,9 @@ header .weaves {
   margin: 10px 0;
   text-align: center;
 }
+/* layout */
 /* songs */
-#content #page-image {
+#content #songs-page-photo {
   display: inline-block;
   margin: 1px;
   vertical-align: top;
@@ -133,21 +131,18 @@ header .weaves {
   margin: 5px 0;
 }
 /* songs */
+/* anonsment */
 #content .weaves {
   font-size: 0;
   margin: 30px auto;
 }
-#content .show {
-  width: 235px;
-}
-/* anonsment */
 #content #anons-photo {
   display: inline-block;
-  width: 145px;
+  vertical-align: top;
 }
 #content #anons-photo img{
   height: auto;
-  width: 175px;
+  width: 232px;
 }
 #content #sponsor-search {
   text-align: justify;
@@ -205,7 +200,6 @@ header .weaves {
   height: 320px;
   width: 170px;
 }
-/* guestbook / feedbacks */
 #content #feedback-form {
   display: inline-block;
   vertical-align: top;
@@ -249,3 +243,4 @@ header .weaves {
 #content #feedback-text p:nth-child(6) {
   text-align: right;
 }
+/* guestbook / feedbacks */

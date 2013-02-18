@@ -1,13 +1,13 @@
 Romans::Application.routes.draw do
 
-  get '/profile' => 'welcome#all_messages', as: 'profile'
   resources :songs do
     collection { post :import }
   end
-  resources :feedbacks, except: :show do
+  resources :feedbacks, except: [:new, :show]  do
     put :publish, on: :member
     get :not_published, on: :collection
   end
+
   get '/contacts' => 'messages#new', as: 'contacts'
   resources :messages, :disks, except: :show
 
