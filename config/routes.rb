@@ -6,6 +6,7 @@ Romans::Application.routes.draw do
   end
   resources :feedbacks, except: :show do
     put :publish, on: :member
+    get :not_published, on: :collection
   end
   get '/contacts' => 'messages#new', as: 'contacts'
   resources :messages, :disks, except: :show

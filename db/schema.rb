@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130210195523) do
+ActiveRecord::Schema.define(:version => 20130218065655) do
 
   create_table "disks", :force => true do |t|
     t.string   "title"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20130210195523) do
     t.text     "body",       :limit => 255
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
+    t.boolean  "published"
   end
 
   create_table "messages", :force => true do |t|

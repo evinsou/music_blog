@@ -7,7 +7,7 @@ class Feedback < ActiveRecord::Base
   validates :check_code, presence: true
   validate :check_code_is_not_current_year, :on => :create
 
-  scope :published, where( :is_published => true )
+  scope :published, where( :published => true )
 
 private
   def check_code_is_not_current_year
