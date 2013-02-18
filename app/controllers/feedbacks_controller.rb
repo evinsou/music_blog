@@ -1,6 +1,7 @@
 class FeedbacksController < ApplicationController
   respond_to :html, :js
   def index
+    @feedback = Feedback.new
     @feedbacks = Feedback.published
     respond_with @feedbacks
   end

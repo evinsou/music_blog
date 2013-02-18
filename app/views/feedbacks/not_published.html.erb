@@ -1,10 +1,8 @@
-<h1>Feedbacks#not_published</h1>
-<p>place where is checking </p>
+<h1>Непроверенные сообщения </h1>
+<p>Сообщения, которые нуждаются в проверке перед публикацией</p>
 
 <% if @feedbacks.any? %>
   <%= render @feedbacks %>
 <% else %>
-  <p>Пока нет ни одного отзывы для проверки</p>
+  <p>Пока нет ни одного сообщения для проверки</p>
 <% end %>
-
-<%= link_to 'Back', root_path %>

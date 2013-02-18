@@ -96,69 +96,73 @@ header .weaves {
 
 /* layout */
 
-#main #content {
+#content {
   display: inline-block;
   width: 980px;
 }
-#main #content h1 {
+#content h1 {
   font-size: 2em;
   margin: 10px 0;
   text-align: center;
 }
 /* songs */
-#main #content #page-image {
+#content #page-image {
   display: inline-block;
   margin: 1px;
   vertical-align: top;
   width: 178px;
 }
-#main #content #songs-page-desc {
+#content #songs-page-desc {
   display: inline-block;
   padding: 5px;
   width: 700px;
 }
-#main #content #songs-page-desc h1 {
+#content #songs-page-desc h1 {
   font-family: "StudioScriptCRegular",sans-serif;
   font-size: 18pt;
   margin-bottom: 0;
   margin-top: 0;
 }
-#main #content #songs-list {
+#content #songs-list {
   width: 980px;
 }
-#main #songs-list .weaves {
+#songs-list .weaves {
   width: 705px;
 }
-#main #songs-list .song {
+#songs-list .song {
   margin: 5px 0;
 }
 /* songs */
-#main #content .weaves {
+#content .weaves {
   font-size: 0;
   margin: 30px auto;
 }
-#main #content .show {
+#content .show {
   width: 235px;
 }
 /* anonsment */
-#main #content #anons-photo {
+#content #anons-photo {
   display: inline-block;
-  width: 235px;
+  width: 145px;
 }
-#main #content #sponsor-search {
+#content #anons-photo img{
+  height: auto;
+  width: 175px;
+}
+#content #sponsor-search {
   text-align: justify;
   text-indent: 1.5em;
   font-size: 11pt;
   font-style: italic;
   font-weight: bold;
 }
-#main #content p > a {
+#content p > a {
   font-weight: bold;
 }
-#main #content .narrow-anons {
+#content .narrow-anons {
   width: 725px;
 }
-#main #content ul p {
+#content ul p {
   display:inline;
   margin-left: 10px;
 }
@@ -166,14 +170,14 @@ header .weaves {
 /* messages */
 /* messages */
 /* reviews */
-#main #content a > img {
+#content a > img {
   width: 151px;
   height: 218px;
   border:  0;
 }
 /* reviews */
 /* about myself */
-#main #content p {
+#content p {
   font-size: 11pt;
   text-align: justify;
   text-indent: 1.5em;
@@ -182,7 +186,7 @@ header .weaves {
   margin: 2px;
   padding: 3px;
 }
-#main #content img.photo {
+#content img.photo {
   display: inline-block;
   height: 342px;
   margin: 45px 0 10px 20px;
@@ -190,3 +194,58 @@ header .weaves {
   width: 385px;
 }
 /* about myself */
+/* guestbook / feedbacks */
+#content #guestbook-photo {
+  display: inline-block;
+  margin: 0 30px;
+  width: 170px;
+}
+#content #guestbook-photo img{
+  display: inline-block;
+  height: 320px;
+  width: 170px;
+}
+/* guestbook / feedbacks */
+#content #feedback-form {
+  display: inline-block;
+  vertical-align: top;
+  width: 580px;
+}
+#content #feedback-form-desc p:nth-child(2) {
+  font-style: italic;
+}
+#content #feedback-form h2 {
+  margin: 10px 0 15px 20px;
+}
+
+#content #feedback-form form label {
+  padding: 6px 10px 0 10px;
+}
+#content #feedback-form form label {
+  display: inline-block;
+  vertical-align: top;
+  width: 170px;
+}
+#content #feedback-form form input[type="text"],
+#content #feedback-form form textarea {
+  width: 350px;
+}
+#content #feedback-form form input[type="submit"] {
+  margin: 5px 0 0 190px;
+}
+#content #feedback-form div.input {
+  margin-bottom: 15px;
+}
+#content #feedback-form-desc > p {
+  text-align: center;
+}
+#content #feedback-text p {
+  display: block;
+  font-style: italic;
+}
+#content #feedback-text p:nth-child(4) {
+ font-weight: bold;
+}
+#content #feedback-text p:nth-child(6) {
+  text-align: right;
+}
