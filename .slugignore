@@ -1,7 +1,7 @@
-test
-spec
-doc
-features
+/test
+/spec
+/doc
+/features
 .bundle
 /log/*.log
 /tmp
