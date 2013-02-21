@@ -26,9 +26,9 @@ ActiveRecord::Schema.define(:version => 20130218065655) do
     t.string   "name"
     t.string   "location"
     t.text     "body",       :limit => 255
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
-    t.boolean  "published"
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+    t.boolean  "published",                 :default => false
   end
 
   create_table "messages", :force => true do |t|

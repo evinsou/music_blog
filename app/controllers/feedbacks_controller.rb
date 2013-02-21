@@ -31,7 +31,7 @@ class FeedbacksController < ApplicationController
   end
   def publish
     @feedback = Feedback.find(params[:id])
-    @feedback.update_attributes :is_published => true
+    @feedback.update_attributes :published => true
     flash[:notice] = 'feedback is published'
     redirect_to not_published_feedbacks_path
   end

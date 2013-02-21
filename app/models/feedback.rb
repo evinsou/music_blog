@@ -10,7 +10,7 @@ class Feedback < ActiveRecord::Base
   validate :check_code_is_not_current_year, :on => :create
 
   scope :published, where( :published => true )
-
+  scope :not_published, where( :published => false )
 private
   def check_code_is_not_current_year
     unless check_code.to_s == Date.today.strftime("%Y") # to_s need to be?
