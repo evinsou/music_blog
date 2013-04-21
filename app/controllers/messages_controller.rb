@@ -1,4 +1,6 @@
+ # encoding: UTF-8
 class MessagesController < ApplicationController
+  before_filter :authenticate, except: [:new, :create]
   respond_to :html, :js
   def index
     @messages = Message.all

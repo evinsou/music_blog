@@ -1,4 +1,6 @@
+ # encoding: UTF-8
 class FeedbacksController < ApplicationController
+  before_filter :authenticate, except: [:index, :create]
   respond_to :html, :js
   def index
     @feedback = Feedback.new

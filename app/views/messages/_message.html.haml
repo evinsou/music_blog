@@ -1,7 +1,7 @@
 = div_for message do
-  = message.name
-  = message.location
-  = message.email
-  %br/
-  = message.body
-  %br/
+  %div
+    Пишет #{message.name} из #{message.location}
+    %br/
+    ответ можно прислать на ящик с адресом #{message.email}
+  %div
+    = message.body

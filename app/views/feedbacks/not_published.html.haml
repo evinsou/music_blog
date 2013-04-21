@@ -1,0 +1,13 @@
+%h1 Непроверенные сообщения
+%p Сообщения, которые нуждаются в проверке перед публикацией
+- if @feedbacks.any?
+  - @feedbacks.each do |feedback|
+    = feedback.name
+    из #{feedback.location} пишет
+    %br/
+    = feedback.body
+    %br/
+    %p Желаете ли опубликовать это сообщение?
+    = link_to "Опубликовать!", publish_feedback_path(feedback), :method => :put
+- else
+  %p Пока нет ни одного сообщения для проверки
