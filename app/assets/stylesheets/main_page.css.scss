@@ -1,0 +1,80 @@
+article {
+  margin: 0 auto;
+  width: 750px;
+  #text-bar {
+    display: inline-block;
+    width: 425px;
+    vertical-align: top;
+    .weaves {
+      display: inline-block;
+      padding: 15px 90px;
+      img {
+        margin: 10px auto;
+        width: 233px;
+      }
+    }
+    #name {
+      font-family: "LetteraTrentadueRegular",serif;
+      font-size: 16pt;
+      letter-spacing: 1.5px;
+      margin-top: 10px;
+      text-align: right;
+      text-indent: 0;
+    }
+    h1 {
+      font-family: "StudioScriptCRegular", sans-serif;
+      font-size: 1.8em;
+      margin-bottom: 0 10px 10px 0;
+      text-align: right;
+    }
+  }
+  #about-music p {
+    font-family: "StudioScriptCRegular", sans-serif;
+    font-size: 1em;
+    line-height: 100%;
+    margin-top: 10px;
+    text-align: right;
+    text-indent: 0;
+  }
+  #blog-photo {
+    display: inline-block;
+    width: 315px;
+    vertical-align: top;
+  }
+  #blog-task {
+    span a {
+      font-size: 10pt;
+      text-align: center;
+    }
+    h1 {
+      display: inline;
+      font-family: "StudioScriptCRegular",sans-serif;
+      font-size: 17pt;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+    }
+    #enter {
+      display: inline-block;
+      font-size: 28pt;
+      margin: 80px 15px;
+      vertical-align: top;
+      width: 100px;
+    }
+    #close-concert {
+      display: inline-block;
+      font-size: 10pt;
+      text-align: center;
+      width: 270px;
+      h1 {
+        display: inline-block;
+        font-size: 14pt;
+        margin: 2px;
+        padding: 3px;
+      }
+    }
+  }
+}

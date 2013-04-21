@@ -1,0 +1,449 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require reset
+ *= require_self
+ *= require_tree .
+ */
+/*
+for title header h1
+font-family: "StudioScriptCRegular",sans-serif;
+for nav menu li a
+font-family: "LetteraTrentadueRegular",serif;
+for text p
+font-family: "Comic Sans MS","Comic Sans",sans-serif;
+src: url('<%= asset_path('Chunkfive-webfont.eot') %>');
+CorridaCTT.ttf
+Corrida Cyrillic.ttf
+StudioScriptCTT.ttf
+*/
+/* general styles */
+@font-face {
+  font-family: 'Corrida';
+  src: url('Corrida Cyrillic.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('Comic Sans MS.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Lettera Trentadue Translit';
+  src: url('LetteraTrentadue Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Studio Script';
+  src: url('Studio Script Cyrillic.ttf') format("truetype");
+}
+
+body {
+  background-color: #E2CC99;
+  color: #433C2A;
+  margin: 0 auto;
+  font-family: "Comic Sans MS","Comic Sans", sans-serif;
+  width: 1280px;
+}
+a {
+  color: #433C2A;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+a:visited {
+  color: #433C2A;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-family: 'Studio Script', sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 19px 0;
+  text-align: center;
+}
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+footer {
+  margin: 5px 0 25px 0;
+  padding: 5px 0;
+  text-align: center ;
+  width: 1280px;
+}
+p {
+  color: #433C2A;
+  font-family: "Comic Sans MS","Comic Sans",sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 2px;
+  padding: 3px;
+  text-align: justify;
+  text-indent: 1.6em;
+}
+.weaves {
+  font-size: 0;
+  margin: 14px auto;
+}
+.two-weaves {
+  width: 472px;
+}
+.three-weaves {
+  width: 702px;
+}
+.fl-lf {
+  float: left;
+  border: red 1px solid;
+}
+
+.fl-rt {
+  float: right;
+  border: blue 1px solid;
+}
+
+.clearfix {
+  clear: both;
+  font-size: 0;
+}
+
+.weaves {
+  font-size: 0;
+  margin: 10px auto;
+}
+
+.sign-name p {
+  text-align: right;
+}
+
+.anons-width {
+  width: 235px;
+}
+
+.text-block {
+  display: inline-block;
+}
+
+.custom-font {
+  font-family: 'Lettera Trentadue', sans-serif;
+  font-size: 24px;
+}
+
+/* general styles */
+/* layout styles */
+
+header {
+  h1 {
+    font-family: 'Studio Script', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .weaves {
+    width: 1165px;
+  }
+}
+
+#main {
+  width: 1280px;
+  aside {
+    display: inline-block;
+    height: 300px;
+    text-align: right;
+    vertical-align: top;
+    width: 200px;
+    nav {
+      padding: 10px;
+      width: 180px;
+      a {
+        color: #433C2A;
+        text-decoration: none;
+        display: block;
+        font-family: 'Lettera Trentadue', sans-serif;
+        font-size: 14pt;
+      }
+    }
+  }
+}
+
+#content {
+  display: inline-block;
+  width: 980px;
+  h1 {
+    font-family: 'Studio Script', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+}
+
+/* layout */
+/* songs */
+#songs-page-photo {
+  display: inline-block;
+  margin: 1px;
+  vertical-align: top;
+  width: 178px;
+}
+#songs-page-desc {
+  display: inline-block;
+  padding: 5px;
+  width: 700px;
+  h1 {
+    font-family: "StudioScriptCRegular",sans-serif;
+    font-size: 18pt;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+#songs-list {
+  width: 980px;
+  .weaves {
+    width: 705px;
+  }
+  .song {
+    margin: 5px 0;
+  }
+}
+
+/* songs */
+/* anonsment */
+#content {
+  .weaves {
+    font-size: 0;
+    margin: 30px auto;
+  }
+  #anons-photo {
+    display: inline-block;
+    vertical-align: top;
+    img {
+      height: auto;
+      width: 232px;
+    }
+  }
+  #sponsor-search {
+    text-align: justify;
+    text-indent: 1.5em;
+    font-size: 11pt;
+    font-style: italic;
+    font-weight: bold;
+  }
+  #anons-audio-and-video {
+    p > a {
+      font-weight: bold;
+    }
+  }
+
+  .narrow-anons {
+    width: 725px;
+  }
+  ul p {
+    display: inline;
+    margin-left: 10px;
+  }
+}
+/* anonsment */
+
+/* reviews */
+
+/* reviews */
+
+/* about myself */
+#about-myself-photo {
+  display: inline-block;
+  img {
+    height: 342px;
+    margin: 45px 0 10px 20px;
+    padding: 4px;
+    width: 385px;
+  }
+}
+.narrow-text {
+  display: inline-block;
+  width: 550px;
+}
+
+.wide-text {
+  display: inline-block;
+  width: 980px;
+}
+/* about myself */
+
+/* guestbook / feedbacks */
+#content {
+  #guestbook-photo {
+    display: inline-block;
+    margin: 0 30px;
+    width: 170px;
+    img {
+      display: inline-block;
+      height: 320px;
+      width: 170px;
+    }
+  }
+  #feedback-form {
+    display: inline-block;
+    vertical-align: top;
+    width: 580px;
+  }
+  #feedback-form-desc p:nth-child(2) {
+    font-style: italic;
+  }
+  #feedback-form {
+    h2 {
+      margin: 10px 0 15px 20px;
+    }
+    form {
+      label {
+        padding: 6px 10px 0 10px;
+        display: inline-block;
+        vertical-align: top;
+        width: 170px;
+      }
+      input[type="text"], textarea {
+        width: 350px;
+      }
+      input[type="submit"] {
+        margin: 5px 0 0 190px;
+      }
+    }
+    div.input {
+      margin-bottom: 15px;
+    }
+  }
+  #feedback-form-desc > p {
+    text-align: center;
+  }
+  #feedback-text p {
+    display: block;
+    font-style: italic;
+    &:nth-child(4) {
+      font-weight: bold;
+    }
+    &:nth-child(6) {
+      text-align: right;
+    }
+  }
+}
+/* guestbook / feedbacks */
+/* side notes */
+/* no side note specific styles */
+/* side notes */
+
+/* messaages / contacts */
+
+#messages-photo,
+#contacts-info {
+  display: inline-block;
+}
+#messages-photo {
+  h3 {
+    font-size: 1.5em;
+    font-family: 'Studio Script', sans-serif;
+    margin: 5px 10px;
+  }
+  img {
+    height: 200px;
+    margin: 0 20px;
+    width: 208px;
+  }
+}
+#contacts-info {
+  vertical-align: top;
+  margin-left: 15px;
+  width: 710px;
+  h3 {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 15px 0 0 20px;
+    text-align: left;
+  }
+}
+
+#send-a-message {
+  margin: 40px auto 10px auto;
+  width: 550px;
+  h3 {
+    margin: 10px 0 15px 20px;
+  }
+  form {
+    label {
+      padding: 6px 10px 0 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 170px;
+    }
+    input[type="text"],
+    input[type='email'],
+    textarea {
+      width: 350px;
+    }
+    input[type="submit"] {
+      margin: 5px 0 0 190px;
+    }
+  }
+  div.input {
+    margin-bottom: 15px;
+  }
+}
+  #message-form-desc > p {
+    text-align: center;
+  }
+/* messaages */
+
+/* links */
+#three-links {
+  img {
+    height:33px;
+    margin: 10px 0;
+    width: 88px;
+  }
+  p {
+    vertical-align: top; /* pictures are higher than text. have to be on same line */
+  }
+}
+#links-titov-text {
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+}
+#links-titov {
+  text-align: center;
+  h3 {
+    font-family: 'Studio Script', sans-serif;
+    font-size: 1.5em;
+    margin: 15px 0;
+    a {
+      color: blue;
+      font-weight: normal;
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin: 10px;
+  }
+  #links-titov-photo {
+    margin: 0 auto;
+    width: 220px;
+  }
+}
+
+/* links */
+
+/* disks */
+#disks-info {
+  text-align: center;
+}
+/* disks */

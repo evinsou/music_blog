@@ -1,0 +1,16 @@
+%h1 Репертуар
+#songs-page-photo
+  = image_tag 'http://www.korneeva.com/img/168x255.jpg', :alt => "image"
+#songs-page-desc
+  %span
+  %p
+    На этой странице размещены ссылки на тексты и ноты моего репертуара. Для того чтобы перейти на страницу песни с нотами, текстом и возможностью прослушать запись, нажмите на название песни.
+  %p
+    Романсы, отмеченные годом записи можно скачать в формате mp3. Для того, чтобы скачать романс, нажмите правой кнопкой мыши по году записи и выберите команду "Сохранить файл..."
+#songs-list
+  .weaves
+    = image_tag 'http://www.korneeva.com/img/line.png', :alt => "image"
+    %img{:alt => "image", :src => "http://www.korneeva.com/img/line.png"}/
+    = image_tag 'http://www.korneeva.com/img/line.png', :alt => "image"
+  %ul
+    = render @songs

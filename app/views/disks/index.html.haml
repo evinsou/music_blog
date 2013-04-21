@@ -1,0 +1,14 @@
+%h1 Дискография
+#disks-info
+  %p
+    На этой странице представлены содержание и обложки моих альбомов.
+  %p
+    Скачать и прослушать русские романсы в МР3 можно на странице #{ link_to 'Репертуар', 'http://www.korneeva.com/repert.html'  }  .
+.weaves.two-weaves
+  = image_tag 'http://www.korneeva.com/img/line.png', :alt => "image"
+  = image_tag 'http://www.korneeva.com/img/line.png', :alt => "image"
+
+-if @disks.any?
+  = render @disks
+-else
+  Дискография пуста

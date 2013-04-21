@@ -1,0 +1,9 @@
+= div_for song do
+  %span
+    = song.id
+  %span
+    = link_to song.title, song_path(song)
+  %span
+    = song.authors
+  %span
+    = song.record_year

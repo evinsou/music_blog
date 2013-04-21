@@ -1,3 +1,4 @@
+ # encoding: UTF-8
 class ApplicationController < ActionController::Base
   protect_from_forgery
   force_ssl
@@ -8,4 +9,14 @@ class ApplicationController < ActionController::Base
   end
 
   helper_method :current_user
+  protected
+  def authenticate
+    logged_in? ? true : access_denied
+  end
+  def logged_in?
+    @current_user.is_a? User
+  end
+  def access_denied
+    redirect_to log_in_path, notice: 'Чтобы зайти в личную часть блога, пожалуйста, залогинтесь.'
+  end
 end
