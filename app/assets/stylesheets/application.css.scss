@@ -53,15 +53,15 @@ body {
   width: 1280px;
 }
 a {
-  color: #433C2A;
   text-decoration: none;
 }
 a:hover {
   color: #000;
 }
-a:visited {
+a, a:visited, p {
   color: #433C2A;
 }
+
 h1 {
   text-align: center;
 }
@@ -80,10 +80,8 @@ footer {
   margin: 5px 0 25px 0;
   padding: 5px 0;
   text-align: center ;
-  width: 1280px;
 }
 p {
-  color: #433C2A;
   font-family: "Comic Sans MS","Comic Sans",sans-serif;
   font-size: 1em;
   line-height: 1.2em;
@@ -136,7 +134,6 @@ p {
 
 .custom-font {
   font-family: 'Lettera Trentadue', sans-serif;
-  font-size: 24px;
 }
 
 /* general styles */
@@ -159,18 +156,18 @@ header {
   aside {
     display: inline-block;
     height: 300px;
+    margin: 0 10px 10px 0;
     text-align: right;
     vertical-align: top;
-    width: 200px;
+    width: 220px;
     nav {
       padding: 10px;
       width: 180px;
       a {
-        color: #433C2A;
-        text-decoration: none;
         display: block;
         font-family: 'Lettera Trentadue', sans-serif;
-        font-size: 14pt;
+        font-size: 1.1em;
+        line-height: 1.5em;
       }
     }
   }
@@ -178,7 +175,7 @@ header {
 
 #content {
   display: inline-block;
-  width: 980px;
+  width: 1044px;
   h1 {
     font-family: 'Studio Script', sans-serif;
     font-size: 1.5em;
@@ -207,7 +204,7 @@ header {
   }
 }
 #songs-list {
-  width: 980px;
+  width: 1060px;
   .weaves {
     width: 705px;
   }
