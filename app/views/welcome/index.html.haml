@@ -1,19 +1,23 @@
 %h1
   Страница для управления блогом.
+#new-disk-and-song-links
+  = link_to 'Добавить новую песню в репертуар', new_song_path
+  %br/
+  = link_to 'Добавить новый диск в дискографию', new_disk_path
+  %br/
+#to-feedbacks-and-messages-links
+  %p
+  Просмотрите новые личные сообщения и сообщения с отзывами.
+  %br/
+  = link_to 'Просмотреть не опубликованные сообщения', not_published_feedbacks_path
+  %br/
+  = link_to 'Просмотреть личные сообщения', messages_path
+  %br/
 
-= link_to 'Добавить новую песню в репертуар', new_song_path
-%br/
-= link_to 'Добавить новый диск в дискографию', new_disk_path
-%br/
-
-%p
-Просмотрите новые личные сообщения и сообщения с отзывами.
-%br/
-= link_to 'Просмотреть не опубликованные сообщения', not_published_feedbacks_path
-%br/
-= link_to 'Просмотреть личные сообщения', messages_path
-%br/
-
-= render @feedbacks
-= render @messages
+#feedbacks
+  - if @feedbacks.any?
+    = render @feedbacks
+#messages
+  - if @messages.any?
+    = render @messages
 

@@ -1,2 +1,8 @@
-\%h1 Messages#edit
-\%p Find me in app/views/messages/edit.html.erb
+
+= simple_form_for @song do |f|
+  \#{f.input :title, label: 'Название песни'}
+  \#{f.input :authors, label: 'Авторы'}
+  \#{f.input :music_papers, label: 'Ноты'}
+  \#{f.input :record_year, label: 'Год записи'}
+  \#{f.input :lyrics, label: 'Текст песни'}
+  \#{f.button :submit, 'Добавить'}

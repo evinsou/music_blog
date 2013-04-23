@@ -1,9 +1,8 @@
- # encoding: UTF-8
 class MessagesController < ApplicationController
   before_filter :authenticate, except: [:new, :create]
   respond_to :html, :js
   def index
-    @messages = Message.all
+    @messages = Message.order('messages.created_at DESC')
     respond_with @messages
   end
   def new

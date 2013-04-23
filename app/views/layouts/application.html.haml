@@ -24,19 +24,23 @@
         %nav
           %ul
             %li= link_to 'На главную', root_path
-            %li= link_to 'Анонс', page_path("announcement")
-            %li= link_to 'О себе', page_path("about_myself")
-            %li= link_to 'Афиша', page_path("billboard")
+            %li= link_to 'Анонс', static_path("announcement")
+            %li= link_to 'О себе', static_path("about_myself")
+            %li= link_to 'Афиша', static_path("billboard")
             %li= link_to 'Репертуар', songs_path
             %li= link_to 'Дискография', disks_path
-            %li= link_to 'Фотографии', page_path("photos")
-            %li= link_to 'Видеозаписи', page_path("video_records")
-            %li= link_to 'Рецензии', page_path("reviews")
-            %li= link_to 'Заметки на полях', page_path("side_notes")
+            %li= link_to 'Фотографии', static_path("photos")
+            %li= link_to 'Видеозаписи', static_path("video_records")
+            %li= link_to 'Рецензии', static_path("reviews")
+            %li= link_to 'Заметки на полях', static_path("side_notes")
             %li= link_to 'Гостевая книга', feedbacks_path
             %li= link_to 'Контакты', contacts_path
-            %li= link_to 'Ссылки', page_path("links")
+            %li= link_to 'Ссылки', static_path("links")
+            - if current_user
+              %li= link_to 'Админка', admin_menu_path
       %section#content
+        = content_tag :p, notice, :class => 'notice' if notice.present?
+        = content_tag :p, alert, :class => 'alert' if alert.present?
         = yield
     %footer
       = link_to 'Вверх'

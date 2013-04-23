@@ -55,13 +55,12 @@ body {
 a {
   text-decoration: none;
 }
-a:hover {
-  color: #000;
-}
 a, a:visited, p {
   color: #433C2A;
 }
-
+a:hover {
+  color: #000;
+}
 h1 {
   text-align: center;
 }
@@ -212,7 +211,22 @@ header {
     margin: 5px 0;
   }
 }
-
+  form {
+    label {
+      padding: 6px 10px 0 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 170px;
+    }
+    input[type="text"],
+    input[type='email'],
+    textarea {
+      width: 350px;
+    }
+    input[type="submit"] {
+      margin: 5px 0 0 190px;
+    }
+  }
 /* songs */
 /* anonsment */
 #content {
@@ -443,4 +457,20 @@ header {
 #disks-info {
   text-align: center;
 }
+  form {
+    label {
+      padding: 6px 10px 0 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 170px;
+    }
+    input[type="text"],
+    input[type='email'],
+    textarea {
+      width: 350px;
+    }
+    input[type="submit"] {
+      margin: 5px 0 0 190px;
+    }
+  }
 /* disks */

@@ -1,4 +1,5 @@
 class DisksController < ApplicationController
+  before_filter :authenticate, :except => [:index]
   respond_to :html, :js
   def index
     @disks = Disk.all

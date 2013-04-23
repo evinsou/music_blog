@@ -1,10 +1,9 @@
- # encoding: UTF-8
 class FeedbacksController < ApplicationController
-  before_filter :authenticate, except: [:index, :create]
+  before_filter :authenticate, except: [:index, :new, :create]
   respond_to :html, :js
   def index
     @feedback = Feedback.new
-    @feedbacks = Feedback.published
+    @feedbacks = Feedback.published.order('created_at DESC')
     respond_with @feedbacks
   end
   def create

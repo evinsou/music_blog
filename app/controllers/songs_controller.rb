@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  before_filter :authenticate, :except => [:index, :show]
   respond_to :html, :js
   def index
     @songs = Song.all
@@ -34,9 +35,5 @@ class SongsController < ApplicationController
   def destroy
     @song = Song.find(params[:id])
     redirect_to songs_path
-  end
-  def import
-    Song.import(params[:file])
-    redirect_to root_url, notice: "Songs imported."
   end
 end
