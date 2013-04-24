@@ -19,6 +19,7 @@ gem "high_voltage"
 gem "bcrypt-ruby"
 gem 'html2haml'
 gem "haml-rails"
+gem 'activeadmin'
 group :development do
   gem 'erb2haml'
 end

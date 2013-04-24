@@ -9,10 +9,6 @@
   %body
     %header
       %h1 Романс уходящего века
-      #user_nav
-        - if current_user
-          You are logged in.
-          \#{link_to "Log out", log_out_path}
       .weaves
         = image_tag 'http://www.korneeva.com/img/line.png'
         = image_tag 'http://www.korneeva.com/img/line.png'
@@ -36,8 +32,6 @@
             %li= link_to 'Гостевая книга', feedbacks_path
             %li= link_to 'Контакты', contacts_path
             %li= link_to 'Ссылки', static_path("links")
-            - if current_user
-              %li= link_to 'Админка', admin_menu_path
       %section#content
         = content_tag :p, notice, :class => 'notice' if notice.present?
         = content_tag :p, alert, :class => 'alert' if alert.present?
