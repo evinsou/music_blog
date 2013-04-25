@@ -1,7 +1,7 @@
 Romans::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+
 
   resources :songs, :disks, :only => [:index,  :show]
   resources :feedbacks, :messages, :only => [:new, :create]
@@ -14,8 +14,8 @@ Romans::Application.routes.draw do
   get "sign_up" => "users#new", as: "sign_up"
   resources :users, only: [:new, :create]
   resource :session
-  get 'admin_menu' => "welcome#index", as: 'admin_menu'
 
   get '/:id' => 'high_voltage/pages#show', :as => :static
   root to: 'pages#show', id: 'main_page'
+  ActiveAdmin.routes(self)
 end
