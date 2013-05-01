@@ -1,6 +1,6 @@
 # encoding: UTF-8
 class Feedback < ActiveRecord::Base
-   attr_accessible :name, :location, :body
+   attr_accessible :name, :location, :body, :created_at
    attr_accessor :check_code
 
   validates :name, :location, :body, presence: true,

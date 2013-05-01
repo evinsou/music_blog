@@ -34,4 +34,6 @@ Romans::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  #added by developer
+  config.time_zone = 'Moscow'
 end

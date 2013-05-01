@@ -1,6 +1,7 @@
 Romans::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+  #added by developer
+  config.time_zone = 'Moscow'
   # Code is not reloaded between requests
   config.cache_classes = true
 

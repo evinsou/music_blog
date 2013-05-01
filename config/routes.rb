@@ -1,10 +1,8 @@
 Romans::Application.routes.draw do
 
-  resources :songs
-  resources :feedbacks, except: [:new, :show]  do
-    put :publish, on: :member
-    get :not_published, on: :collection
-  end
+  resources :video_records, :photos, :only => :index
+  resources :songs, :disks, :only => [:index,  :show]
+  resources :feedbacks, :messages, :only => [:new, :create]
 
   get '/contacts' => 'messages#new', as: 'contacts'
   resources :messages, :disks, except: :show
