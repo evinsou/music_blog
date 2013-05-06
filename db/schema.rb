@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501090741) do
+ActiveRecord::Schema.define(:version => 20130502153052) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -73,17 +73,14 @@ ActiveRecord::Schema.define(:version => 20130501090741) do
     t.datetime "updated_at", :null => false
   end
 
-<<<<<<< Updated upstream
-=======
   create_table "photos", :force => true do |t|
     t.string   "title"
     t.string   "image_url"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-    t.string   "small_picture"
+    t.string   "small_photo"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
->>>>>>> Stashed changes
   create_table "songs", :force => true do |t|
     t.string   "title"
     t.string   "authors"
@@ -92,6 +89,16 @@ ActiveRecord::Schema.define(:version => 20130501090741) do
     t.text     "music_papers", :limit => 255
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
+    t.string   "record_url"
+  end
+
+  create_table "titov_songs", :force => true do |t|
+    t.string   "title"
+    t.string   "song_length"
+    t.string   "authors"
+    t.string   "url_to_mp3"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -99,6 +106,13 @@ ActiveRecord::Schema.define(:version => 20130501090741) do
     t.string   "password_digest"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "video_records", :force => true do |t|
+    t.string   "title"
+    t.string   "youtube_url"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

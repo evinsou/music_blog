@@ -1,6 +1,9 @@
-= div_for song do
-  = song.name
-  = song.location
+= div_for feedback do
+  = feedback.created_at.strftime('%d.%m.%Y  (%H:%M)')
   %br/
-  = song.body
-  = link_to 'Publish', publish_path
+  = feedback.name
+  %br/
+  = feedback.location
+  %br/
+  = feedback.body
+  %br/

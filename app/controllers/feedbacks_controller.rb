@@ -12,7 +12,7 @@ class FeedbacksController < ApplicationController
     if @feedback.save
       redirect_to feedbacks_path, :notice => 'Feedback created'
     else
-      render action: 'new'
+      render :action => 'index'
     end
   end
   def edit
@@ -33,7 +33,7 @@ class FeedbacksController < ApplicationController
   end
   def publish
     @feedback = Feedback.find(params[:id])
-    @feedback.update_attributes :published => true
+    @feedback.publish
     flash[:notice] = 'feedback is published'
     redirect_to not_published_feedbacks_path
   end

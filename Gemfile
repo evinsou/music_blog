@@ -21,7 +21,7 @@ gem 'html2haml'
 gem "haml-rails"
 gem 'activeadmin'
 gem 'nokogiri'
-
+gem 'mechanize'
 group :development do
   gem 'erb2haml'
 end

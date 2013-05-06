@@ -2,7 +2,12 @@ Romans::Application.routes.draw do
 
   resources :video_records, :photos, :only => :index
   resources :songs, :disks, :only => [:index,  :show]
-  resources :feedbacks, :messages, :only => [:new, :create]
+  resources :feedbacks, :only => [:index, :create] do
+    member do
+      put 'publish'
+    end
+  end
+  resources :messages, :only => [:index, :create]
 
   get '/contacts' => 'messages#new', as: 'contacts'
   resources :messages, :disks, except: :show
@@ -15,4 +20,6 @@ Romans::Application.routes.draw do
   get '/welcome' => "welcome#index", as: 'welcome'
 
   root to: 'pages#show', id: 'main_page'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 end

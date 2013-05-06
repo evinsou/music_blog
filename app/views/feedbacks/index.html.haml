@@ -34,8 +34,9 @@
   = image_tag 'http://www.korneeva.com/img/line.png'
   = image_tag 'http://www.korneeva.com/img/line.png'
   = image_tag 'http://www.korneeva.com/img/line.png'
-- if @feedbacks.any?
+- if @feedbacks.present?
   %h2 Оставленные сообщения
-  = render @feedbacks
+  #feedbacks
+    = render @feedbacks
 - else
   %p Пока нет ни одного сообщения
