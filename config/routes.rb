@@ -1,7 +1,13 @@
 Romans::Application.routes.draw do
 
+  resources :video_records, :photos, :only => :index
   resources :songs, :disks, :only => [:index,  :show]
-  resources :feedbacks, :messages, :only => [:new, :create]
+  resources :feedbacks, :only => [:index, :create] do
+    member do
+      put 'publish'
+    end
+  end
+  resources :messages, :only => [:index, :create]
 
   get '/contacts' => 'messages#new', as: 'contacts'
   get '/anons' => 'pages#show', id: 'announcement'
@@ -14,6 +20,9 @@ Romans::Application.routes.draw do
 
   get '/:id' => 'high_voltage/pages#show', :as => :static
   root to: 'pages#show', id: 'main_page'
-  ActiveAdmin.routes(self)
+
+#  ActiveAdmin.routes(self)
+#  devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
 end
