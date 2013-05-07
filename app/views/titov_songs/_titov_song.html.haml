@@ -1,0 +1,12 @@
+= div_for titov_song do
+  %span
+    = titov_song.id
+  %span
+    = link_to titov_song.title, titov_song_path(titov_song)
+  - if titov_song.song_length.present?
+    \-
+    %span
+      = titov_song.song_length
+    \-
+  %span
+    = titov_song.authors

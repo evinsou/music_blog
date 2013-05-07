@@ -1,0 +1,15 @@
+#titov-song-page
+  %h2
+    Альбом Анатолия Титова    "СТАРИННЫЙ РОМАНС"
+  = image_tag 'http://www.korneeva.com/tit/jpg/Titov-disk.jpg'
+  %br/
+  #titov-song-info
+    %span
+      = @titov_song.id
+    %span
+      = link_to @titov_song.title, @titov_song.url_to_mp3
+      \-
+    %span
+      = @titov_song.authors
+
+= link_to 'На страничку альбома А.Титова', titov_songs_path

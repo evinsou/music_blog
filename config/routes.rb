@@ -1,7 +1,7 @@
 Romans::Application.routes.draw do
 
   resources :video_records, :photos, :only => :index
-  resources :songs, :disks, :only => [:index,  :show]
+  resources :songs, :disks, :titov_songs, :only => [:index,  :show]
   resources :feedbacks, :only => [:index, :create] do
     member do
       put 'publish'

@@ -477,3 +477,69 @@ header {
     }
   }
 /* disks */
+/* titov_songs */
+#titov-songs-header,
+#titov-songs-content {
+  width: 940px;
+}
+#titov-songs-header {
+  height: 50px;
+  margin-bottom: 25px;
+}
+#titov-songs-content {
+  #titov-photo-text {
+    margin-top: 15px;
+    img {
+      height: 510px;
+      width: 192px;
+      vertical-align: top;
+    }
+    p {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    #titov-narrow {
+      display: inline-block;
+      max-width: 670px;
+      min-width: 450px;
+    }
+  }
+  #titov-page-text {
+    p:last-child {
+      text-align: right;
+    }
+  }
+}
+#titov-song-page {
+  h2 {
+    font-family: Arial,Helvetica,sans-serif ;
+  }
+  img {
+    margin: 10px;
+  }
+#titov-song-info {
+    border-top: 5px #553F00 solid;
+    border-bottom: 5px #553F00 solid;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+}
+#titov-name-sign {
+  text-align: right;
+}
+.titov_song {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  :first-child {
+    margin-right: 21px;
+  }
+  a {
+    color: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+  }
+  a:hover {
+    color: #FFA
+  }
+}
+/* titov_songs */
