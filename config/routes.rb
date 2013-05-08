@@ -18,11 +18,11 @@ Romans::Application.routes.draw do
   resources :users, only: [:new, :create]
   resource :session
 
-  get '/:id' => 'high_voltage/pages#show', :as => :static
   root to: 'pages#show', id: 'main_page'
 
 #  ActiveAdmin.routes(self)
 #  devise_for :admin_users, ActiveAdmin::Devise.config
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+  get '/:id' => 'high_voltage/pages#show', :as => :static
 end

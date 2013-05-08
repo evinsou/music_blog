@@ -1,2 +1,5 @@
-%h1 VideoRecords#index
-%p Find me in app/views/video_records/index.html.haml
+%h1
+  Видео записи
+
+- if @video_records.any?
+  = render @video_records

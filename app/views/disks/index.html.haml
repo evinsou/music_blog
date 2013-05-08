@@ -7,8 +7,8 @@
 .weaves.two-weaves
   = image_tag 'http://www.korneeva.com/img/line.png', :alt => "image"
   = image_tag 'http://www.korneeva.com/img/line.png', :alt => "image"
-
--if @disks.any?
-  = render @disks
--else
-  Дискография пуста
+#disks
+  -if @disks.any?
+    = render @disks
+  -else
+    Дискография пуста

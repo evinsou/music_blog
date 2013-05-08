@@ -476,6 +476,32 @@ header {
       margin: 5px 0 0 190px;
     }
   }
+.disk {
+  margin: 0 auto 20px auto;
+  max-width: 630px;
+  min-width: 540px;
+  h1 {
+    margin-bottom: 15px;
+  }
+  .song-title {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 0.92em;
+    text-align: right;
+    vertical-align: middle;
+    width: 200px;
+    br:nth-child(2n+1) {
+      display: none;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+  .disk-cover {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+}
 /* disks */
 /* titov_songs */
 #titov-songs-header,
@@ -543,3 +569,16 @@ header {
   }
 }
 /* titov_songs */
+
+/* photos */
+#photos {
+  margin: 12px auto;
+  width: 720px;
+}
+.photo {
+  display: inline-block;
+  img {
+    margin: 5px 4px;
+  }
+}
+/* photos */
