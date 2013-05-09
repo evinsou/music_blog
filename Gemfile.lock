@@ -69,6 +69,8 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fancybox-rails (0.2.1)
+      railties (>= 3.1.0)
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
@@ -195,8 +197,6 @@ GEM
     unf_ext (0.0.6)
     warden (1.2.1)
       rack (>= 1.0)
-    warden (1.2.1)
-      rack (>= 1.0)
     webrobots (0.1.1)
 
 PLATFORMS
@@ -207,6 +207,7 @@ DEPENDENCIES
   bcrypt-ruby
   coffee-rails (~> 3.2.1)
   erb2haml
+  fancybox-rails
   haml-rails
   high_voltage
   html2haml

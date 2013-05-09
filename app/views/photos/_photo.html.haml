@@ -1,3 +1,3 @@
 =div_for photo do
-  = link_to photo.image_url do
+  = link_to photo.image_url, :class => 'fancybox', :rel=>"gallery" do
     = image_tag photo.small_photo, :alt => photo.title

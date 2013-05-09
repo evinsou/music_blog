@@ -5,6 +5,6 @@ class Song < ActiveRecord::Base
   serialize :music_papers
   validates :title, :authors, :lyrics,
             presence: true,
-            :format => { :with => /\A[a-zA-Z\sА-Яа-я\d\(\)\.\,\!\?:-<>]+\z/,
+            :format => { :with => /[a-zA-ZА-Яа-я\s\d\(\)\.,!\?:\-\/\"]+/,
               :message => "Можно вводить только буквы и знаки препинания" }
 end

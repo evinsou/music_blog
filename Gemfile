@@ -22,6 +22,7 @@ gem "haml-rails"
 gem 'activeadmin'
 gem 'nokogiri'
 gem 'mechanize'
+gem 'fancybox-rails'
 
 group :development do
   gem 'erb2haml'

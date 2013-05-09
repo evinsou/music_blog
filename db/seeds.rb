@@ -12,6 +12,7 @@ require 'open-uri'
 
 root_url = 'http://korneeva.com/'
 #photos
+
 photos_url = 'http://korneeva.com/photos.html'
 photos_page = Nokogiri::HTML(open(photos_url), nil, 'UTF-8')
 
